@@ -18,24 +18,24 @@
   --heroOverlay: rgba(255, 255, 255, 0.22);   
   --overlay: rgba(11, 35, 68, 0.78); 
   --navOverlay: rgba(11, 35, 68, 0.58);
+  --heroScale: 0.75;
 }
 
 body { margin: 0; font-family: "Libre Baskerville", serif; line-height: 1.6; color: #333; }
 header { 
-    color: #fff; 
-    padding: 30px 20px; 
-    text-align: center; 
-    background-image: url('./background11.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-     min-height: 420px;
-       display: flex;
+  color: #fff; 
+  text-align: center; 
+  background-image: url('./background11.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: calc(220px * var(--heroScale));
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px 110px;
+  padding: calc(60px * var(--heroScale)) 20px calc(80px * var(--heroScale));
 }
 header::before {
   content: '';
@@ -50,16 +50,16 @@ header > * {
 }
 header h1 {
   margin: 10px 0 0;
-  font-size: clamp(26px, 3.2vw, 40px);
+  font-size: clamp(calc(26px * var(--heroScale)), 3.2vw, calc(30px * var(--heroScale)));
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #111;
   text-shadow: 0 2px 10px rgba(255,255,255,0.45);
 }
 header img {
-  height: 190px;
+  height: calc(160px * var(--heroScale));
   width: auto;
-  margin: 0 auto 18px;
+  margin: 0 auto calc(18px * var(--heroScale));
 }
 nav {
   position: absolute;
@@ -68,17 +68,16 @@ nav {
   bottom: 0;
 
   background: var(--navOverlay);
-  padding: 22px 12px;
+  padding: calc(22px * var(--heroScale)) 12px;
   text-align: center;
-
   backdrop-filter: blur(6px);
 }
 nav a {
   color: var(--gold);
   text-decoration: none;
-  margin: 0 42px;
+  margin: 0 calc(42px * var(--heroScale));
   font-weight: 400;
-  font-size: clamp(20px, 2.3vw, 38px);
+  font-size: clamp(calc(20px * var(--heroScale)), 2.3vw, calc(25px * var(--heroScale)));
   letter-spacing: 0.02em;
 }
 nav a:hover { text-decoration: underline; color: #0b2344; }
@@ -113,11 +112,11 @@ footer { background: #0b2344; color: #fff; text-align: center; padding: 20px; ma
 }
 
 @media (max-width: 768px) {
-    nav a { margin: 0 14px; }
+  nav a { margin: 0 calc(14px * var(--heroScale)); }
 
   header {
-    min-height: 520px;
-    padding: 70px 16px 105px;
+    min-height: calc(520px * var(--heroScale));
+    padding: calc(70px * var(--heroScale)) 16px calc(105px * var(--heroScale));
   }
 }
 
