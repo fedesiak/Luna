@@ -94,6 +94,24 @@ h2 { color: #0b2344; margin-bottom: 20px; }
 .panel a { display: block; background: #0b2344; color: #d4c698; text-decoration: none; padding: 20px 40px; border-radius: 8px; font-size: 1.2em; font-weight: bold; }
 .panel a:hover { background: #2e3a57; }
 footer { background: #0b2344; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+.privacy-consent{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 12px 0 6px;
+  color: var(--navy);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.privacy-consent input[type="checkbox"]{
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--navy);
+}
+
 @media (max-width: 768px) {
     nav a { margin: 0 14px; }
 
@@ -169,11 +187,18 @@ W naszej ofercie znajduje się również pielęgnacja terenów zielonych koszeni
 ✉️ biuro@lunanieruchomosci.pl</p>
 <div class="contact-form">
 <form action="https://formspree.io/f/xyzdyrle" method="POST">
-<input type="text" name="name" placeholder="Imię i nazwisko" required>
-<input type="email" name="email" placeholder="Adres e-mail" required>
-<textarea name="message" rows="5" placeholder="Twoja wiadomość" required></textarea>
-<button type="submit">Wyślij</button>
+  <input type="text" name="name" placeholder="Imię i nazwisko" required>
+  <input type="email" name="email" placeholder="Adres e-mail" required>
+  <textarea name="message" rows="5" placeholder="Twoja wiadomość" required></textarea>
+
+  <label class="privacy-consent">
+    <input type="checkbox" name="privacy_consent" required>
+    Akceptuję politykę prywatności
+  </label>
+
+  <button type="submit">Wyślij</button>
 </form>
+
 </div>
 </section>
 <section id="panel" class="panel">
