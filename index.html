@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Luna Nieruchomości – profesjonalne zarządzanie nieruchomościami w Krakowie i powiecie krakowskim. Administracja, księgowość, obsługa techniczna wspólnot mieszkaniowych. Licencjonowany zarządca z 25-letnim doświadczeniem.">
+<title>Luna Nieruchomości - Zarządanie Nieruchomościami</title>
+<style>
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+header { 
+    color: #fff; 
+    padding: 30px 20px; 
+    text-align: center; 
+    background-image: url('./background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+header > * {
+    position: relative;
+    z-index: 2;
+}
+header h1 { margin-top: 25px; font-size: 18px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); color: #2c3e5a; }
+header img { position: relative; z-index: 2; }
+nav { 
+    background: linear-gradient(90deg, #FFB5A7 0%, #FFA07A 50%, #FF9E6D 100%);
+    padding: 10px; 
+    text-align: center; 
+}
+nav a { color: #2c3e5a; text-decoration: none; margin: 0 15px; font-weight: bold; }
+nav a:hover { text-decoration: underline; color: #1e2a47; }
+section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+h2 { color: #1e2a47; margin-bottom: 20px; }
+.offer-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.offer-item { background: #f4f6fa; padding: 20px; border-radius: 6px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+.contact-form { background: #f4f6fa; padding: 20px; border-radius: 6px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 600px; margin: 20px auto; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+.contact-form button { background: #1e2a47; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+.contact-form button:hover { background: #2e3a57; }
+.panel { display: flex; justify-content: center; margin-top: 40px; }
+.panel a { display: block; background: #1e2a47; color: #fff; text-decoration: none; padding: 20px 40px; border-radius: 8px; font-size: 1.2em; font-weight: bold; }
+.panel a:hover { background: #2e3a57; }
+footer { background: #1e2a47; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+@media (max-width: 768px) {
+    nav {
+        font-size: 13px;
+    }
+	header {
+  color: #fff;
+  padding: 70px 20px;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<img src="./logo.png" style="height: 250px; width: auto;">
+<h1>Twoja nieruchomość w dobrych rękach</h1>
+</header>
+<nav>
+<a href="#oferta">Oferta</a>
+<a href="#onas">O nas</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#panel">Panel mieszkańca</a>
+</nav>
+<section id="oferta">
+<h2>Nasza oferta</h2>
+<div class="offer-list">
+<div class="offer-item">
+<h3>Administracja</h3>
+<p>Zapewniamy kompleksową obsługę administracyjną wspólnot mieszkaniowych i budynków. Nasze działania obejmują prowadzenie dokumentacji, organizację zebrań, przygotowywanie uchwał i protokołów, a także bieżący kontakt z właścicielami lokali. Dbamy o przejrzystość i sprawną komunikację, tak aby mieszkańcy mieli zawsze dostęp do aktualnych informacji o swojej nieruchomości.</p>
+</div>
+<div class="offer-item">
+<h3>Księgowość</h3>
+<p>Prowadzimy pełną obsługę księgową nieruchomości. Zajmujemy się rozliczaniem opłat, sporządzaniem planów gospodarczych i rozliczeń rocznych, a także nadzorowaniem płatności i windykacją należności. Dzięki rzetelnemu prowadzeniu finansów wspólnoty, właściciele mają pewność przejrzystości i stabilności budżetu.</p>
+</div>
+<div class="offer-item">
+<h3>Obsługa techniczna</h3>
+<p>Nadzorujemy stan techniczny budynków oraz koordynujemy wszelkie naprawy i przeglądy. Współpracujemy ze sprawdzonymi podwykonawcami w zakresie konserwacji, instalacji oraz prac remontowych. Dbamy o to, aby każdy budynek był bezpieczny, sprawny i spełniał wszystkie obowiązujące normy.</p>
+</div>
+<div class="offer-item">
+<h3>Utrzymanie czystości i zieleni</h3>
+<p>Oferujemy pełen zakres usług związanych z utrzymaniem czystości w częściach wspólnych budynków oraz dbałością o ich otoczenie. Zapewniamy regularne sprzątanie klatek schodowych, piwnic, garaży oraz innych przestrzeni wspólnych.
+W naszej ofercie znajduje się również pielęgnacja terenów zielonych koszenie trawy, przycinanie krzewów, nasadzanie roślin oraz sezonowe prace ogrodnicze. Dzięki naszym usługom nieruchomości pozostają zadbane, estetyczne i przyjazne dla mieszkańców.
+</p>
+</div>
+</div>
+</section>
+<section id="onas">
+<h2>O nas</h2>
+<p><strong>Luna Nieruchomości Andrzej Machowski</strong> to firma działająca na rynku krakowskim i w powiecie krakowskim od 2010 roku. Nasze doświadczenie w zarządzaniu i pośrednictwie w obrocie nieruchomościami sięga jednak roku 2000. Przez lata zdobywaliśmy wiedzę, współpracując zarówno przy obsłudze zabytkowych kamienic w sercu Starego Miasta, jak i nowoczesnych inwestycji deweloperskich.</p>
+
+<p>Posiadamy <strong>licencję zarządcy nieruchomości</strong>, co daje naszym klientom pewność profesjonalnej i rzetelnej obsługi.</p>
+
+<p>Oferujemy <strong>kompleksowe zarządzanie i administrowanie nieruchomościami</strong>, a na życzenie właścicieli również <strong>usługi pośrednictwa w obrocie nieruchomościami</strong>. Współpracujemy ze sprawdzonymi podwykonawcami w zakresie konserwacji budynków, utrzymania czystości oraz prac remontowo-budowlanych, dbając o najwyższy standard obsługi.</p>
+
+<p>Specjalizujemy się w obsłudze <strong>wspólnot mieszkaniowych zarówno dużych kompleksów, jak i kameralnych budynków</strong>. Z powodzeniem łączymy profesjonalizm z umiejętnością sprawnej komunikacji, pomagając właścicielom w rozwiązywaniu codziennych wyzwań związanych z funkcjonowaniem nieruchomości.</p>
+<h3>Dlaczego my?</h3>
+<p>Stawiamy na <strong>przejrzystość finansów</strong>, <strong>szybką komunikację</strong> oraz <strong>realne oszczędności</strong> dla wspólnot i właścicieli obiektów. Łączymy wieloletnie doświadczenie z nowoczesnymi rozwiązaniami dzięki czemu Twoja nieruchomość jest zawsze w dobrych rękach.</p>
+
+<h3>Współpraca</h3>
+<p>Jesteśmy aktywnym członkiem <strong>Małopolskiego Stowarzyszenia Pośredników w Obrocie Nieruchomościami i Zarządców Nieruchomości (MSPON)</strong>, co pozwala nam stale podnosić kwalifikacje, korzystać z wymiany doświadczeń oraz działać zgodnie z najwyższymi standardami Kodeksu Etyki Zawodowej Zarządcy Nieruchomości.</p>
+<img src="./mspon-logo.jpg" style="height: 150px; width: auto;">
+</section>
+<section class="panel">
+<a href="mailto:biuro@lunanieruchomosci.pl">📧 Zapytaj o ofertę</a>
+</section>
+<section id="kontakt">
+<h2>Kontakt</h2>
+<p>Zapraszamy do kontaktu – chętnie przygotujemy ofertę dopasowaną do Państwa potrzeb.</p>
+<p><strong>Telefon:</strong><br>
+📞 +48 608 063 094<br>
+📞 +48 602 378 041</p>
+<p><strong>E-mail:</strong><br>
+✉️ biuro@lunanieruchomosci.pl</p>
+<div class="contact-form">
+<form action="https://formspree.io/f/xyzdyrle" method="POST">
+<input type="text" name="name" placeholder="Imię i nazwisko" required>
+<input type="email" name="email" placeholder="Adres e-mail" required>
+<textarea name="message" rows="5" placeholder="Twoja wiadomość" required></textarea>
+<button type="submit">Wyślij</button>
+</form>
+</div>
+</section>
+<section id="panel" class="panel">
+<a href="https://mmsoft.com.pl/lokale.php?Adm=729" target="_blank">🔑 Panel mieszkańca</a>
+</section>
+<footer>
+<p>&copy; 2025 Luna Nieruchomości – Kraków i okolice</p>
+</footer>
+</body>
+</html>
