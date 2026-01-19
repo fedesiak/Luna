@@ -81,19 +81,19 @@ nav a {
   font-size: clamp(20px, 2.3vw, 38px);
   letter-spacing: 0.02em;
 }
-nav a:hover { text-decoration: underline; color: #1e2a47; }
+nav a:hover { text-decoration: underline; color: #0b2344; }
 section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-h2 { color: #1e2a47; margin-bottom: 20px; }
+h2 { color: #0b2344; margin-bottom: 20px; }
 .offer-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 .offer-item { background: #f4f6fa; padding: 20px; border-radius: 6px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
 .contact-form { background: #f4f6fa; padding: 20px; border-radius: 6px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 600px; margin: 20px auto; }
-.contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-.contact-form button { background: #1e2a47; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: "Libre Baskerville", serif; color: var(--navy); }
+.contact-form button { background: var(--navy); color: var(--gold); border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; font-weight: bold; font-family: "Libre Baskerville", serif; }
 .contact-form button:hover { background: #2e3a57; }
 .panel { display: flex; justify-content: center; margin-top: 40px; }
-.panel a { display: block; background: #1e2a47; color: #fff; text-decoration: none; padding: 20px 40px; border-radius: 8px; font-size: 1.2em; font-weight: bold; }
+.panel a { display: block; background: #0b2344; color: #d4c698; text-decoration: none; padding: 20px 40px; border-radius: 8px; font-size: 1.2em; font-weight: bold; }
 .panel a:hover { background: #2e3a57; }
-footer { background: #1e2a47; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+footer { background: #0b2344; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
 @media (max-width: 768px) {
     nav a { margin: 0 14px; }
 
@@ -102,6 +102,7 @@ footer { background: #1e2a47; color: #fff; text-align: center; padding: 20px; ma
     padding: 70px 16px 105px;
   }
 }
+
 </style>
 </head>
 <body>
@@ -176,7 +177,7 @@ W naszej ofercie znajduje się również pielęgnacja terenów zielonych koszeni
 </div>
 </section>
 <section id="panel" class="panel">
-<a href="https://mmsoft.com.pl/lokale.php?Adm=729" target="_blank">🔑 Panel mieszkańca</a>
+<a href="https://mmsoft.com.pl/lokale.php?Adm=729" class="panelMieszkanca" target="_blank">🔑 Panel mieszkańca</a>
 </section>
 <footer>
 <p>&copy; 2025 Luna Nieruchomości – Kraków i okolice</p>
